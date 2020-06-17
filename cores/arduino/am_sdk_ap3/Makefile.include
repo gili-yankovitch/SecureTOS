@@ -1,0 +1,22 @@
+INCLUDE += -Icores/${CORE}/am_sdk_ap3/mcu/${MCU}/
+INCLUDE += -Icores/${CORE}/am_sdk_ap3/CMSIS/AmbiqMicro/Include/
+INCLUDE += -Icores/${CORE}/am_sdk_ap3/CMSIS/ARM/Include/
+INCLUDE += -Icores/${CORE}/am_sdk_ap3/devices/
+INCLUDE += -Icores/${CORE}/am_sdk_ap3/utils/
+
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_ble.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_debug.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_delay.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_faultisr.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_id.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_stdio.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_string.c
+SOURCES += cores/${CORE}/am_sdk_ap3/utils/am_util_time.c
+
+DEFINES += -DARDUINO_AM_AP3_SFE_BB_ARTEMIS_NANO
+DEFINES += -DAM_PACKAGE_BGA
+DEFINES += -DAM_PART_APOLLO3
+
+HAL = cores/${CORE}/am_sdk_ap3/mcu/${MCU}/hal/gcc
+LDFLAGS += -Lcores/${CORE}/am_sdk_ap3/CMSIS/ARM/Lib/ARM -larm_cortexM4lf_math
+LDFLAGS += -L${HAL}/bin/ -lam_hal

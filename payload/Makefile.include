@@ -1,0 +1,3 @@
+SOURCES += payload/main.c
+SOURCES += payload/tasks_setup.c
+SOURCES += payload/config_task.c

@@ -1,0 +1,12 @@
+INCLUDE += -IFreeRTOSv10.1.1/Source/portable/GCC/AMapollo2/
+INCLUDE += -IFreeRTOSv10.1.1/Source/include/
+
+SOURCES += FreeRTOSv10.1.1/Source/event_groups.c
+SOURCES += FreeRTOSv10.1.1/Source/list.c
+SOURCES += FreeRTOSv10.1.1/Source/queue.c
+SOURCES += FreeRTOSv10.1.1/Source/tasks.c
+SOURCES += FreeRTOSv10.1.1/Source/timers.c
+SOURCES += FreeRTOSv10.1.1/Source/portable/MemMang/heap_2.c
+SOURCES += FreeRTOSv10.1.1/Source/portable/GCC/AMapollo2/port.c
+
+DEFINES += -DAM_FREERTOS

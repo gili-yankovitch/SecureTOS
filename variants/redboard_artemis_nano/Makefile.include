@@ -1,0 +1,11 @@
+INCLUDE += -Ivariants/${VARIANT}/bsp
+INCLUDE += -Ivariants/${VARIANT}/config
+
+SOURCES += variants/${VARIANT}/bsp/am_bsp.c
+SOURCES += variants/${VARIANT}/bsp/am_bsp_pins.c
+SOURCES += variants/${VARIANT}/config/variant.cpp
+SOURCES += variants/${VARIANT}/startup/startup_gcc.c
+
+#LD_SCRIPT = variants/${VARIANT}/linker_scripts/gcc/artemis_sbl_svl_app.ld
+LDFLAGS += -T variants/${VARIANT}/linker_scripts/gcc/artemis_sbl_svl_app.ld
+

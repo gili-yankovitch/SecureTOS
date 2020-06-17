@@ -1,0 +1,26 @@
+# VSCode
+.vscode
+
+#Python
+*__pycache__*
+
+# Mac
+*.DS_Store
+
+# OTA Files
+*OTA_blob*
+
+*.elf
+*.axf
+/test-results
+
+# Makefile stuff
+*.o
+*.oo
+*.d
+
+# nano stuff
+*.swp
+
+# Compiled file
+Apollo3Artemis*

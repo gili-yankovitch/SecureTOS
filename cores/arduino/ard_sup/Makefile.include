@@ -1,0 +1,26 @@
+INCLUDE += -Icores/${CORE}/ard_sup/
+INCLUDE += -Icores/${CORE}/ard_sup/ard_supers/
+
+SOURCES += cores/${CORE}/ard_sup/uart/ap3_uart_structures.c
+SOURCES += cores/${CORE}/ard_sup/analog/ap3_analog_structures.c
+SOURCES += cores/${CORE}/ard_sup/gpio/ap3_gpio_structures.c
+SOURCES += cores/${CORE}/ard_sup/ard_supers/hooks.c
+SOURCES += cores/${CORE}/ard_sup/ard_supers/itoa.c
+SOURCES += cores/${CORE}/ard_sup/ard_supers/avr/dtostrf.c
+
+# SOURCES += cores/${CORE}/ard_sup/main.cpp
+SOURCES += cores/${CORE}/ard_sup/uart/ap3_uart.cpp
+SOURCES += cores/${CORE}/ard_sup/initialization/ap3_initialization.cpp
+SOURCES += cores/${CORE}/ard_sup/timing/ap3_timing.cpp
+SOURCES += cores/${CORE}/ard_sup/clock/ap3_clock_sources.cpp
+SOURCES += cores/${CORE}/ard_sup/debugging/ap3_debugging.cpp
+SOURCES += cores/${CORE}/ard_sup/analog/ap3_analog.cpp
+SOURCES += cores/${CORE}/ard_sup/gpio/ap3_shift.cpp
+SOURCES += cores/${CORE}/ard_sup/gpio/ap3_gpio.cpp
+SOURCES += cores/${CORE}/ard_sup/ard_supers/IPAddress.cpp
+SOURCES += cores/${CORE}/ard_sup/ard_supers/WMath.cpp
+SOURCES += cores/${CORE}/ard_sup/ard_supers/Print.cpp
+# SOURCES += cores/${CORE}/ard_sup/ard_supers/WString.cpp
+SOURCES += cores/${CORE}/ard_sup/ard_supers/Stream.cpp
+SOURCES += cores/${CORE}/ard_sup/iomaster/ap3_iomaster.cpp
+

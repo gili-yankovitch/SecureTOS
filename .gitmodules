@@ -1,0 +1,6 @@
+[submodule "micro-aes"]
+	path = payload/micro-aes
+	url = https://github.com/SmarterDM/micro-aes.git
+[submodule "payload/micro-ecc"]
+	path = payload/micro-ecc
+	url = https://github.com/kmackay/micro-ecc.git
